@@ -14,44 +14,182 @@
 	<body>
 
 		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-                    <a href="index.html" class="logo"><img src="images/logo_large.png" style="width:40px;height:40px;"/>   IntelliChirp</a>
-					<nav id="nav">
-						<a href="index.html">Home</a>
-						<a href="team.html">Team</a>
-						<a href="implementation.html">Implementation</a>
-                        <a href="documents.html">Documents</a>
-					</nav>
-				</div>
-			</header>
-			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+		<header id="header">
+			<div class="inner" style="text-align: center">
+				<nav id="nav">
+					<a href="index.html">Home</a>
+					<a href="team.html">Team</a>
+					<a href="implementation.html">Implementation</a>
+					<a href="documents.html">Documents</a>
+					<a href="https://soundscapes2landscapes.org/">Visit Sponsors</a>
+				</nav>
+			</div>
+		</header>
+		<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
 		<!-- Main -->
 			<section id="main" >
 				<div class="inner">
-					<header class="major special">
-						<h1>Implementation</h1>
-						<p> Under Construction </p>
+					<header>
+						<h2>Project Description</h2>
 					</header>
-					<!-- <img src="images/arbimon_large.png" alt="" style="width:100%;height:100%;" /> -->
+					<p>
+						Various environmental changes affect a range of species around the world and as more
+						species are being affected, proper management and observation are required to understand their response.
+						Traditional field methods require trained observers to determine species presence/absence and are thus
+						expensive and challenging to employ at large scales. Using sound to monitor biodiversity 
+						across landscapes is a fairly recent development.
+						<br/><br/>
+						Our clients are working with
+						<a href="https://soundscapes2landscapes.org/">
+							Soundscapes2Landscapes.
+						</a>
+						They are having a problem with an un-user friendly application that requires manual identification in terabytes of sound files. This manual approach is incredibly time consuming
+						and needs to be automated. We feel confident that we can provide 
+						a solution that is user friendly and automates that identification process with machine learning.
+						<br/><br/>The initial concept for this project was provided by our sponsor, in the form of a 
+						<a href="https://www.cefns.nau.edu/~edo/Classes/CS_Capstone/Projects/F19/Quinn-Burns-Soundscapes2.pdf">
+							Capstone Proposal.
+						</a>
+					</p>
 				</div>
 			</section>
+
+			<section id="main">
+				<div class="inner">
+					<header>
+						<h2>High Level Requirements</h2>
+					</header>
+					<p>
+						<ul>
+  							<li>
+  								A user friendly web application.
+							</li>
+  							<li>
+  								The ability to upload sound files in a variety of ways, including a single file selection from a file directory
+  								as well as batch loading files.
+							</li>
+  							<li>
+  								A machine learning algorithm that will automatically identify different acoustic components as well
+  								as allow for the removal of non-biological components.
+  							</li>
+   							<li>
+  								Results of the analyzed audio, including a summary of the components of the sound file,
+  								acoustic indices, and an export of the sound file with background noise masked out.
+  							</li>							
+  							<li>
+  								A standalone version of the software, for remote analysis on devices such as a Raspberry Pi.
+  							</li>
+						</ul>
+						The development process will include weekly meetings with our clients. We will iteratively refine our requirements
+						in each of these meetings.
+					</p>
+				</div>
+			</section>
+
+			<section id="main">
+				<div class="inner">
+					<header class="major special">
+						<h2>Envisioned Solution</h2>
+					</header>
+					<p>
+						Our envisioned solution is a user friendly web application for use by any researcher or citizen scientist.
+						This application is called the <b>Soundscape Noise Analysis Workbench (S.N.A.W.)</b>, and will allow 
+						users to analyze sound files with the power of machine learning. 
+						The results given to the users include a summary of the audio components in the file,
+  						acoustic indices, and an export of the sound file with background noise masked out. Users will gain a better 
+						understanding of how various sources of noise in soundscape recordings diminish the ability to detect 
+						individual bird species and quantify avian diversity. Using machine learning, instead of
+						the current manual identification process, will drastically speed up the identification of terabytes of 
+						acoustic data. This solution will allow users anywhere, anytime, to upload their soundscapes for noise analysis, quickly.
+					</p>
+				</div>
+			</section>
+
+			<section id="main">
+				<div class="inner">
+					<header class="major special">
+						<h2>Technologies</h2>
+					</header>
+					<p> 
+						<b>Machine Learning Algorithm:</b>
+						To be determined.
+						<br/>
+						<b>Frameworks:</b>
+						To be determined.
+						<br/>
+						<b>GUI:</b>
+						To be determined.
+						<br/>
+						<b>Version Control:</b> 
+						We will use GitHub for version control. We will have master contain functional code, with each task in it's own branch. Commits need to have concise and descriptive titles.
+						<br/>
+						<b>Issue Tracking:</b>
+						Trello will be used for issue tracking.
+						<br/><br/>
+						We are currently establishing the rest of the technologies that we will use.. 
+						<br/>
+						Check back soon for an updated list!
+					</p>
+				</div>
+			</section>
+
+			<section id="main">
+				<div class="inner">
+					<header class="major special">
+						<h2>Progress</h2>
+					</header>
+                    <p>
+                    	<b>Project Completion:</b> <progress value = "5" max = "100"></progress>
+                    	<br/>
+                    	<b>First Stage:</b> Creating Requirements <progress value = "22" max = "100"></progress>
+                    	<br/>
+                    	<b>Third Stage:</b> Implementation <progress value = "0" max = "100"></progress>
+                    	<br/>
+                    	<b>Final Stage:</b> Testing and Delivery <progress value = "0" max = "100"></progress>
+
+						<br/><br/>
+						For more details, please see 
+						<a href="https://trello.com/b/J2J9nzLB/machine-learning-classification-of-acoustic-data-components">
+						our Trello board
+						</a>
+					</p>
+				</div>
+			</section>
+
+			<section id="main">
+				<div class="inner">
+					<header class="major special">
+						<h2>Codebase</h2>
+					</header>
+					<p> Coming soon. </p>
+				</div>
+			</section>
+
+			<section id="main">
+				<div class="inner">
+					<header class="major special">
+						<h2>Demo</h2>
+					</header>
+					<p> Coming soon. </p>
+				</div>
+			</section>
+
 
 		<!-- Footer -->
 			<section id="footer">
 				<div class="inner">
 					<div class="copyright">
-						&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a href="https://unsplash.com/">Unsplash</a>
+						&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>.
 					</div>
 				</div>
 			</section>
 
-		<!-- Scripts
+		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script> -->
+            <script src="assets/js/main.js"></script>
 
 	</body>
 </html>
