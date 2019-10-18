@@ -48,6 +48,50 @@
 		-webkit-text-size-adjust: none;
 	}
 
+/*IntelliChirp CSS*/
+.centerImages {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#centerText {
+	text-align: center;
+}
+
+#snaw {
+	border-radius: 25px;
+	border: 2px solid rgb(10, 63, 19);
+	text-align: center;
+	color: rgba(82, 52, 13, 0.75);
+	background-color: rgba(212, 181, 141, 0.205);
+	font-size: 3em;
+	font-family: 'Lucida Sans'; 
+	padding: 5px;
+}
+
+#team {
+	border-radius: 25px;
+	border: 2px solid rgb(10, 63, 19);
+	text-align: center;
+	color: rgba(82, 52, 13, 0.75);
+	background-color: rgba(212, 181, 141, 0.205);
+	font-family: 'Lucida Sans'; 
+	padding: 5px;
+	padding-top: 35px;
+}
+
+@media screen and (max-width: 980px) {
+
+	#team {
+		width: 30%;
+		min-width: 240px;
+	}
+
+}
+
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -1772,7 +1816,7 @@
 		text-align: center;
 	}
 
-	.align-right {
+	.align-right {F
 		text-align: right;
 	}
 
@@ -3128,7 +3172,7 @@
 			}
 
 		#header .logo {
-			font-family: FontAwesome;
+			/*font-family: FontAwesome;*/
 			display: inline-block;
 			height: inherit;
 			left: 0;
@@ -3145,7 +3189,7 @@
 		}
 
 			#header .logo:hover {
-				color: rgba(229, 71, 75, 0.75);
+				color: #32a852;
 			}
 
 		#header a {
@@ -3163,7 +3207,7 @@
 		}
 
 			#header a:hover {
-				color: rgba(255, 255, 255, 0.75);
+				color: rgba(127, 218, 135, 0.75);
 			}
 
 			#header a:last-child {
@@ -3190,6 +3234,7 @@
 
 	#nav {
 		display: inline-block;
+		text-align: center;
 	}
 
 		@media screen and (max-width: 980px) {
@@ -3365,7 +3410,7 @@
 		color: #f2a3a5;
 		padding: 13em 0 11em 0;
 		background-color: #0c0c0c;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/forest.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 15% left;
@@ -3576,7 +3621,7 @@
 /* Main */
 
 	#main {
-		padding: 4em 0 2em 0;
+		padding: 4em 0 0em 0;
 	}
 
 	#one {
@@ -3743,10 +3788,10 @@
 /* Footer */
 
 	#footer {
-		background-color: #1a6332;
-		color: #f2a3a5;
-		padding: 4em 0 2em 0;
-		background: #1a6332;
+		background-color: #1c1c1c;
+		color: #545454;
+		padding: 2em 0 .1em 0;
+		background: #1c1c1c;
 	}
 
 		#footer input, #footer select, #footer textarea {
@@ -3938,7 +3983,7 @@
 		}
 
 			#footer .copyright a {
-				color: #f2a3a5;
+				color: #666666;
 			}
 
 		@media screen and (max-width: 980px) {
