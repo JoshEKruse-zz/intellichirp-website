@@ -4024,7 +4024,7 @@
 }
 
 /* Style the collapsible content. Note: hidden by default */
-.content {
+.content_collapse {
   padding: 0 18px;
   display: none;
   overflow: hidden;
